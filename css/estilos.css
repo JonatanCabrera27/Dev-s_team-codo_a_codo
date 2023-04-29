@@ -1,4 +1,13 @@
-#piepagina{
+*{
+  margin: 0px;
+  padding: 0px;
+  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+
+#footer{
   text-align: center;
-  color: blue;
+  color: white;
+  background-color: rgb(33,37,41)
 }

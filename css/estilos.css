@@ -10,4 +10,72 @@
   text-align: center;
   color: white;
   background-color: rgb(33,37,41)
+
 }
+
+.gridcontenedor{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+
+  row-gap:20px;
+  column-gap: 20px;
+
+
+  background-color: rgb(81, 102, 71);
+  border: 5px solid rgb(3, 42, 18);
+  padding: 20px;
+
+}
+
+  .carrusel{
+    grid-column-start:1;
+    grid-column-end: 5;
+    text-align: center;
+    background-color: rgb(110, 153, 128);
+    border: 1px solid black;
+  }
+.info1{
+    grid-column-start:1;
+    grid-column-end: 5;
+    text-align: center;
+    background-color: rgb(110, 153, 128);
+    border: 1px solid black;
+  }
+
+.video1 {
+  border: 5px solid rgb(5, 52, 39);
+ }
+
+.video2 {
+  border: 5px solid rgb(5, 52, 39);
+}
+
+.video3 {
+  border: 5px solid rgb(5, 52, 39);
+}
+  
+.info2{
+  grid-column-start:1;
+  grid-column-end: 5;
+  text-align: center;
+  background-color: rgb(110, 153, 128);
+  border: 1px solid black;
+}
+
+
+iframe {
+  max-width: 100%;
+  height: auto;
+  width="560";
+   height="315";
+}
+
+
+footer a {
+  text-decoration: none;
+  padding: 5px;
+
+}
+
+ 

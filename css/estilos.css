@@ -67,8 +67,8 @@
 .iframe {
   max-width: 100%;
   height: auto;
-  width="560";
-  height="315";
+  width:"560";
+  height:"315";
 }
 
 
@@ -99,6 +99,9 @@
           'info2'
           'aside'
           'footer';
+  }
+  .slider-container, .slider-item{
+    width: auto;
   }
 }
 
@@ -201,8 +204,8 @@ button {
 
 /*estilos para el carrusel*/
 
-.slider-container {
-  grid-area: carrusel;
+/* .slider-container {
+  grid-area : carrusel;
   border-radius: 20px;
   border-color:black;
 
@@ -213,9 +216,71 @@ button {
   scroll-snap-type: x mandatory;
 }
 
-.slider-container img {
+*/
+.slider-container {
+  grid-area: carrusel;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  
+}
+
+.slider-item{
   flex: 0 0 100%;
   width: 100%;
-  object-fit: cover;
-  scroll-snap-align: center;
+  height: 500px;
+} 
+
+.mySlides {
+  display: none;
 }
+
+.anterior, .siguiente {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.siguiente {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.anterior:hover, .siguiente:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  position: relative;
+  top: -30px;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+ }
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.desvanecer {
+  animation-name: desvanecer;
+  animation-duration: 1.5s;
+}
+
+@keyframes desvanecer {
+  from {opacity: .4}
+  to {opacity: 1}
+} 

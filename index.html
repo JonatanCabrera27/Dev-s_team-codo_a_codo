@@ -32,12 +32,28 @@
 
             <!--<div class="carrusel">Carrusel</div>-->
             <div class="slider-container">
-                <img class="slider-item"
+                <div class="mySlides desvanecer">
+                    <img class="slider-item"
                     src="./img/imagen1.jpg" />
-                <img class="slider-item"
+                    
+                </div>
+                <div class="mySlides desvanecer">
+                    <img class="slider-item"
                     src="./img/imagen2.jpg" />
-                <img class="slider-item"
-                    src="./img/imagen3.jpg" />
+                    
+                </div>
+                <div class="mySlides desvanecer">
+                    <img class="slider-item"
+                    src="./img/imagen3.jpg"  />
+                </div>
+
+                <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="siguiente" onclick="plusSlides(1)">&#10095;</a>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
     
 

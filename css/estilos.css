@@ -21,7 +21,7 @@
 
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  background-image:url(/Devs_team-codo_a_codo/img/fond.jpg);
+  background-image:url(/ProyectoDevsActualizado/Devs_team-codo_a_codo/img/fondo1.jpg);
   border: 5px solid rgb(3, 42, 18);
   padding: 20px;
  
@@ -82,20 +82,6 @@
   padding: 5px;
   }
 
-.footer{
-    grid-area: footer;
-    text-align: center;
-    background-color: rgb(12, 20, 120);
-   
-}
-
-.nav{
-  grid-area: nav;
-  background-color: rgb(33, 37, 41);
-
-  
-}
- 
 
 #footer{
   padding-top: 10px;

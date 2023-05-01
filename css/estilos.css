@@ -303,3 +303,127 @@ button {
     opacity: 1
   }
 }
+
+
+/*estilo tarjetas de vulnerabilidades*/
+
+.ransomware {
+  width: 200px;
+  border:1px solid rgb(66, 23, 23);
+  box-shadow: 0 0 3px rgb(116, 62, 23);
+  border-radius: 5px;
+  margin: 10px; 
+
+}
+.ransomware img {
+  width:100%;
+    
+}
+
+.ransomware a{
+  color: rgb(195, 159, 60);
+  background-color: bisque;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  
+  
+}
+
+
+.ddos {
+  width: 200px;
+  border:1px solid rgb(66, 23, 23);
+  box-shadow: 0 0 3px rgb(116, 62, 23);
+  border-radius: 5px;
+  margin: 10px; 
+
+}
+.ddos img {
+  width:100%;
+    
+}
+
+.ddos a{
+  color: rgb(195, 159, 60);
+  background-color: bisque;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  
+  
+}
+
+
+.troyanosbancarios {
+  width: 200px;
+  border:1px solid rgb(66, 23, 23);
+  box-shadow: 0 0 3px rgb(116, 62, 23);
+  border-radius: 5px;
+  margin: 10px; 
+
+}
+.troyanosbancarios img {
+  width:100%;
+    
+}
+
+.troyanosbancarios a{
+  color: rgb(195, 159, 60);
+  background-color: bisque;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+   
+}
+
+.textocard{
+  padding: 10px;
+  text-align: justify;
+ 
+}
+
+
+.contVulnerabilidades {
+  display: grid;
+  width: 50%;
+  margin: 0 auto;
+  grid-template-areas:
+      'ransomware ddos troyanosbancarios';
+}
+
+h2{
+  text-align: center;
+
+}
+
+/* botones de las tarjetas del menu Vulnerabilidades*/
+.button1{
+  background-color: #555555;
+  color:aliceblue;
+  font-size: 15px;
+}
+
+.button1:hover {
+  background-color: #f6410f; 
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.informacionvulnerabilidades{
+text-align: justify;
+margin:50px;
+}

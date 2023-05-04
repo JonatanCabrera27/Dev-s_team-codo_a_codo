@@ -281,22 +281,6 @@ button {
 }
 
 
-
-/*estilos para el carrusel*/
-
-/* .slider-container {
-  grid-area : carrusel;
-  border-radius: 20px;
-  border-color:black;
-
-  display: flex;
-  width: 100%;
-  height: 500px;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-}
-
-*/
 .slider-container {
   grid-area: carrusel;
   width: 100%;
@@ -375,9 +359,74 @@ button {
 }
 
 
-/*estilo tarjetas de vulnerabilidades*/
+/*estilos Pestaña Vunerabilidadess*/
+
+.contVulnerabilidades {
+
+  display: grid;
+  width:80%;
+  margin: 0 auto;
+  grid-template-areas:
+      'imagentop imagentop imagentop imagentop'
+      'contenedorcaja infovul infovul infovul'
+      'animacion1 ransomware ddos troyanosbancarios';
+}
+
+
+.imagentop {
+  grid-area:imagentop;
+ 
+   }
+
+    #imag{
+    width:100% ;
+  }
+
+.infovul {
+  grid-area: infovul;
+}
+
+
+.animacion1 {
+  grid-area:animacion1;
+  position:relative;
+  animation-name:movimiento;
+  animation-duration:15s;
+  }
+
+  
+  @keyframes movimiento {
+    0%{
+      left: 0px;
+      top: 0px;
+      border-radius: 0%;
+      
+    }
+    25%{
+      left: 100px;
+      top: 0px;
+      border-radius: 50%;
+
+    }
+    50%{
+      left: 100px;
+      top: 300px;
+      border-radius: 0%;
+    }
+    75%{
+      left: 0px;
+      top: 200px;
+      border-radius: 50%;
+    }
+    100%{
+      left: 0px;
+      top: 0px;
+      border-radius: 0%;
+    }
+  }
 
 .ransomware {
+  grid-area: ransomware;
   width: 200px;
   border:1px solid rgb(66, 23, 23);
   box-shadow: 0 0 3px rgb(116, 62, 23);
@@ -390,6 +439,13 @@ button {
     
 }
 
+  
+.animacion2 {
+  grid-area:animacion2;
+  border-color: black;
+  }
+  
+  
 .ransomware a{
   color: rgb(195, 159, 60);
   background-color: bisque;
@@ -404,6 +460,7 @@ button {
 
 
 .ddos {
+  grid-area: ddos;
   width: 200px;
   border:1px solid rgb(66, 23, 23);
   box-shadow: 0 0 3px rgb(116, 62, 23);
@@ -430,6 +487,7 @@ button {
 
 
 .troyanosbancarios {
+  grid-area: troyanosbancarios;
   width: 200px;
   border:1px solid rgb(66, 23, 23);
   box-shadow: 0 0 3px rgb(116, 62, 23);
@@ -459,22 +517,9 @@ button {
  
 }
 
-
-.contVulnerabilidades {
-  display: grid;
-  width: 50%;
-  margin: 0 auto;
-  grid-template-areas:
-      'ransomware ddos troyanosbancarios';
-}
-
-h5{
-  text-align: center;
-
-}
 h2{
   text-align: center;
- 
+
 }
 
 /* botones de las tarjetas del menu Vulnerabilidades*/
@@ -497,7 +542,75 @@ h2{
   transition: 0s
 }
 
-.informacionvulnerabilidades{
+.infovul{
 text-align: justify;
-margin:50px;
+padding-left: 60px;
+padding-bottom: 60px;
 }
+
+/*animacion del cubo*/
+
+.contenedorcaja{
+  grid-area: contenedorcaja;
+
+}
+.caja {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin:0;
+  padding:0;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px;
+  animation: girar 30s infinite;
+ }
+
+  .cara{
+position: absolute;
+width: 200px;
+height: 200px;
+backface-visibility: hidden;
+    }
+
+ .cara img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .cara1{
+      transform: translateZ(100px);
+    }
+
+    .cara2{
+      transform: rotateY(90deg) translateZ(100px);
+    }
+
+    .cara3{
+      transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+    }
+
+    .cara4{
+      transform: rotateX(180deg) rotateZ(90deg) translateZ(100px);
+    }
+
+    .cara5{
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+    }
+
+    .cara6{
+      transform: rotateX(-90deg) rotateZ(90deg) translateZ(100px);
+    }
+
+@keyframes girar {
+  50%{
+      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+  
+}
+
+h4{
+  text-align:center;
+
+}
+

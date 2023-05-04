@@ -160,7 +160,6 @@ display: flex !important;
   } 
   .navbar-logo{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     
   }
@@ -170,6 +169,7 @@ display: flex !important;
   .navbar-inicio{
     display: none;
     flex-direction: column;
+
   }
 }
 

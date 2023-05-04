@@ -28,3 +28,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+const bBurger = document.querySelector("#bBurger");
+const links = document.querySelector("#links");
+
+bBurger.addEventListener("click", (e) => {
+  links.classList.toggle("collapse");
+})

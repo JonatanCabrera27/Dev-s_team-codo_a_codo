@@ -87,8 +87,54 @@
   text-decoration: none;
 }
 
+/* Navbar  */
+.navbar {
+  display: flex;
+  background-color: rgb(33, 37, 41);
+  padding: 20px;
+}
 
+.logo img{
+  width: 45px;
+}
 
+.navbar-burger{
+  display: none;
+}
+
+.navbar-burger button{
+  border:none;
+  background-color: rgb(33, 37, 41);
+  color:#ffffff;
+  cursor: pointer;
+}
+
+.navbar-inicio{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-inicio a{
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navbar-inicio a:hover{
+  background-color: white;
+  color: black;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.collapse{
+display: flex !important;
+}
 @media screen and (max-width: 640px) {
 
   /*Para celulares*/
@@ -107,6 +153,23 @@
   .slider-container,
   .slider-item {
     width: auto;
+  }
+
+  .navbar{
+    display: block;
+  } 
+  .navbar-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .navbar-burger{
+    display: block;
+  }
+  .navbar-inicio{
+    display: none;
+    flex-direction: column;
   }
 }
 
@@ -129,6 +192,7 @@
   }
 }
 
+
 @media screen and (min-width: 1280px) {
 
   /* desktop*/
@@ -143,6 +207,10 @@
   }
 }
 
+
+
+
+/* ---------Original-------- */
 nav {
   background-color: rgb(33, 37, 41);
   padding: 20px;
@@ -169,6 +237,8 @@ nav ul li a:hover {
   background-color: white;
   color: black;
 }
+
+/* ------------------------ */
 
 button {
   background-color: white;

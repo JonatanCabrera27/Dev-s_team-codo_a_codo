@@ -374,13 +374,14 @@ button {
 .contVulnerabilidades {
 
   display: grid;
-  width:80%;
+  width:100%;
   margin: 0 auto;
+  column-gap:20px;
   background-image:url(/Devs_team-codo_a_codo/img/fondoprincipal.png);
   grid-template-areas:
-      'imagentop imagentop imagentop imagentop'
-      'contenedorcaja infovul infovul infovul'
-      'animacion1 ransomware ddos troyanosbancarios';
+      'imagentop imagentop imagentop imagentop imagentop'
+      'contenedorcaja contenedorcaja infovul infovul infovul'
+      'animacion1 ransomware ddos troyanosbancarios pishing';
 }
 
 
@@ -446,106 +447,80 @@ button {
   grid-area: ransomware;
   width: 200px;
   background-color: #f2f2f2;
-  box-shadow: 0 0 3px rgb(116, 62, 23);
-  border-radius: 5px;
+  box-shadow: 0 0 3px rgb(251, 251, 251);
+  border-radius: 15px;
   margin: 10px; 
 
 }
 .ransomware img {
   width:100%;
+  border-radius: 15px;
     
 }
-/*
-.animacion2 {
-  grid-area:animacion2;
-  border-color: black;
-  }*/
-  
- /* 
-.ransomware a{
-  color: rgb(195, 159, 60);
-  background-color: bisque;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 8px;
-  display: inline-block;
-  
-}
-*/
 
 .ddos {
   grid-area: ddos;
   width: 200px;
   background-color: #f2f2f2;
-  box-shadow: 0 0 3px rgb(116, 62, 23);
-  border-radius: 5px;
+  box-shadow: 0 0 3px rgb(251, 251, 251);
+  border-radius: 15px;
   margin: 10px; 
 
 }
 .ddos img {
   width:100%;
+  border-radius: 15px;
     
 }
-/*
-.ddos a{
-  color: rgb(195, 159, 60);
-  background-color: bisque;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 8px;
-  display: inline-block;
-  
-  
-}*/
-
 
 .troyanosbancarios {
   grid-area: troyanosbancarios;
   width: 200px;
   background-color: #f2f2f2;
-  box-shadow: 0 0 3px rgb(116, 62, 23);
-  border-radius: 5px;
+  box-shadow: 0 0 3px rgb(251, 251, 251);
+  border-radius: 15px;
   margin: 10px; 
 
 }
 .troyanosbancarios img {
   width:100%;
+  border-radius: 15px;
     
 }
-/*
-.troyanosbancarios a{
-  color: rgb(195, 159, 60);
-  background-color: bisque;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 8px;
-  display: inline-block;
-   
+
+.pishing {
+  grid-area: pishing;
+  width: 200px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 3px rgb(251, 251, 251);
+  border-radius: 15px;
+  margin: 10px; 
+
 }
-*/
+.pishing img {
+  width:100%;
+  border-radius: 15px;
+    
+}
+
 .textocard{
   padding: 10px;
   text-align: justify;
  
 }
 
-h2{
-  text-align: center;
-
-}
 
 /* botones de las tarjetas del menu Vulnerabilidades*/
 .button1{
   background-color: #555555;
   color:aliceblue;
   font-size: 15px;
+  border-radius: 10px;
+  margin-bottom: 5px;
 }
 
 .button1:hover {
-  background-color: #f6410f; 
+  background-color: #4b4c6c; 
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -567,6 +542,7 @@ padding-bottom: 60px;
 
 .contenedorcaja{
   grid-area: contenedorcaja;
+  margin-left: 70px;
 
 }
 .caja {

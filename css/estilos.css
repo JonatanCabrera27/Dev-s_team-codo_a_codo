@@ -30,7 +30,7 @@
 
 .aside {
   grid-area: aside;
-  background-color: rgb(176, 205, 218,80);
+  background-color: rgb(176, 205, 218);
   border-radius: 15px;
 }
 
@@ -78,14 +78,15 @@
   }*/
 
 .info1 {
+  color:black;
   grid-area: info1;
   text-align: justify;
-  background-color: rgb(176, 205, 218,80);
+  background-color: rgb(176, 205, 218);;
   border-radius: 15px;
   padding: 15px;
 }
 
-.info1 h1{
+.info1 h3{
   text-align:center;
 }
 
@@ -104,14 +105,15 @@
 }
 
 .info2 {
+  color:black;
   grid-area: info2;
   text-align: justify;
-  background-color: rgb(176, 205, 218,80);
+  background-color: rgb(176, 205, 218);
   border-radius: 15px;
   padding: 15px;
 }
 
-.info2 h1{
+.info2 h3{
   text-align:center;
 }
 
@@ -631,3 +633,17 @@ h4{
 
 }
 
+
+aside{
+  text-align:left;
+  color:black;
+  padding-top: 15px;
+  padding-left: 8px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+aside a{
+  color:black;
+  font-family:sans-serif;
+
+}

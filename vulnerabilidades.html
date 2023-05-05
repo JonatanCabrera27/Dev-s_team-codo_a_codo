@@ -16,34 +16,37 @@
 </head>
 
 <body>
-
+    <!-- El navbar por semantica siempre va por fuera del main,dentro de una etiqueta Header -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <div class="logo">
+                    <a href="index.html"><img src="./img/icono.png" alt="index.html"></a>
+                </div>
+                <div class="navbar-burger">
+                    <button id="bBurger">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div id="links" class="navbar-inicio">
+                <a href="./index.html">Inicio</a>
+                <a href="./normativas.html">Normativas</a>
+                <a href="./vulnerabilidades.html">Vulnerabilidades</a>
+                <a href="./noticias.html">Noticias</a>
+                <a href="./contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
     <main>
 
         <div class="contVulnerabilidades">
 
-            <div class="nav">
-                <nav class="navbar">
-                    <div class="navbar-logo">
-                        <div class="logo">
-                            <a href="index.html"><img src="./img/icono.png" alt="index.html"></a>
-                        </div>
-                        <div class="navbar-burger">
-                            <button id="bBurger">
-                                <span class="material-symbols-outlined">
-                                    menu
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div id="links" class="navbar-inicio">
-                        <a href="./index.html">Inicio</a>
-                        <a href="./normativas.html">Normativas</a>
-                        <a href="./vulnerabilidades.html">Vulnerabilidades</a>
-                        <a href="./noticias.html">Noticias</a>
-                        <a href="./contacto.html">Contacto</a>
-                    </div>
-                </nav>
-            </div>
+            <!-- <div class="nav">
+               
+            </div> -->
 
             <div class="imagentop"><img id=imag src="./img/CIBERSEGURIDAD.png" alt=""></div>
 
@@ -147,6 +150,7 @@
                </nav>
            
         </div>
+        <script src="./js/javaScript.js"></script>
 
     </body>
 

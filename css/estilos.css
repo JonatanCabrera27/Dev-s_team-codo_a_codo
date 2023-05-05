@@ -20,7 +20,6 @@
 
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  /*background-image:url(/ProyectoDevsActualizado/Devs_team-codo_a_codo/img/fondo1.jpg);*/
   background-image: url(/Devs_team-codo_a_codo/img/fondoprincipal.png);
   background-color: rgb(33, 37, 41);
   border: 5px solid rgb(33, 37, 41);
@@ -38,9 +37,14 @@
 
 .info1 {
   grid-area: info1;
-  text-align: center;
-  background-color: rgb(106, 123, 182);
+  text-align: justify;
+  background-color: rgb(211, 212, 216);
+  border-radius: 15px;
+  padding: 15px;
+}
 
+.info1 h1{
+  text-align:center;
 }
 
 .video1 {
@@ -59,10 +63,16 @@
 
 .info2 {
   grid-area: info2;
-  text-align: center;
-  background-color: rgb(106, 123, 182);
-
+  text-align: justify;
+  background-color: rgb(211, 212, 216);
+  border-radius: 15px;
+  padding: 15px;
 }
+
+.info2 h1{
+  text-align:center;
+}
+
 
 
 .iframe {
@@ -366,6 +376,7 @@ button {
   display: grid;
   width:80%;
   margin: 0 auto;
+  background-image:url(/Devs_team-codo_a_codo/img/fondoprincipal.png);
   grid-template-areas:
       'imagentop imagentop imagentop imagentop'
       'contenedorcaja infovul infovul infovul'
@@ -384,6 +395,9 @@ button {
 
 .infovul {
   grid-area: infovul;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  padding: 15px;
 }
 
 
@@ -394,6 +408,9 @@ button {
   animation-duration:15s;
   }
 
+ .animacion1 img{
+  width: 100px;
+ }
   
   @keyframes movimiento {
     0%{
@@ -428,7 +445,7 @@ button {
 .ransomware {
   grid-area: ransomware;
   width: 200px;
-  border:1px solid rgb(66, 23, 23);
+  background-color: #f2f2f2;
   box-shadow: 0 0 3px rgb(116, 62, 23);
   border-radius: 5px;
   margin: 10px; 
@@ -438,14 +455,13 @@ button {
   width:100%;
     
 }
-
-  
+/*
 .animacion2 {
   grid-area:animacion2;
   border-color: black;
-  }
+  }*/
   
-  
+ /* 
 .ransomware a{
   color: rgb(195, 159, 60);
   background-color: bisque;
@@ -455,14 +471,13 @@ button {
   border-radius: 8px;
   display: inline-block;
   
-  
 }
-
+*/
 
 .ddos {
   grid-area: ddos;
   width: 200px;
-  border:1px solid rgb(66, 23, 23);
+  background-color: #f2f2f2;
   box-shadow: 0 0 3px rgb(116, 62, 23);
   border-radius: 5px;
   margin: 10px; 
@@ -472,7 +487,7 @@ button {
   width:100%;
     
 }
-
+/*
 .ddos a{
   color: rgb(195, 159, 60);
   background-color: bisque;
@@ -483,13 +498,13 @@ button {
   display: inline-block;
   
   
-}
+}*/
 
 
 .troyanosbancarios {
   grid-area: troyanosbancarios;
   width: 200px;
-  border:1px solid rgb(66, 23, 23);
+  background-color: #f2f2f2;
   box-shadow: 0 0 3px rgb(116, 62, 23);
   border-radius: 5px;
   margin: 10px; 
@@ -499,7 +514,7 @@ button {
   width:100%;
     
 }
-
+/*
 .troyanosbancarios a{
   color: rgb(195, 159, 60);
   background-color: bisque;
@@ -510,7 +525,7 @@ button {
   display: inline-block;
    
 }
-
+*/
 .textocard{
   padding: 10px;
   text-align: justify;

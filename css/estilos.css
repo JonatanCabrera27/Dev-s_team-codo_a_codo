@@ -375,15 +375,28 @@ button {
 
   display: grid;
   width:100%;
-  margin: 0 auto;
-  column-gap:20px;
   background-image:url(/Devs_team-codo_a_codo/img/fondoprincipal.png);
   grid-template-areas:
-      'imagentop imagentop imagentop imagentop imagentop'
-      'contenedorcaja contenedorcaja infovul infovul infovul'
-      'animacion1 ransomware ddos troyanosbancarios pishing';
+      'imagentop imagentop imagentop imagentop'
+      'contenedorcaja contenedorcaja infovul infovul'
+      'ransomware ddos troyanosbancarios pishing';
+      column-gap:20px;
 }
 
+
+/*flex para las tarjetas*/
+.itemarea{
+
+  grid-area: 3 /2 / span 5 / 5;
+}
+
+.contenedorflex{
+display:flex;
+flex-direction: row;
+align-items:normal;
+justify-content: center;
+
+}
 
 .imagentop {
   grid-area:imagentop;
@@ -396,12 +409,12 @@ button {
 
 .infovul {
   grid-area: infovul;
-  background-color: #f2f2f2;
+  background-color: rgb(176, 205, 218,80);
   border-radius: 15px;
   padding: 15px;
 }
 
-
+/*
 .animacion1 {
   grid-area:animacion1;
   position:relative;
@@ -441,15 +454,16 @@ button {
       top: 0px;
       border-radius: 0%;
     }
-  }
+  }*/
 
 .ransomware {
   grid-area: ransomware;
   width: 200px;
-  background-color: #f2f2f2;
+  background-color:rgb(176, 205, 218,80);
   box-shadow: 0 0 3px rgb(251, 251, 251);
   border-radius: 15px;
   margin: 10px; 
+
 
 }
 .ransomware img {
@@ -461,7 +475,7 @@ button {
 .ddos {
   grid-area: ddos;
   width: 200px;
-  background-color: #f2f2f2;
+  background-color:rgb(176, 205, 218,80);
   box-shadow: 0 0 3px rgb(251, 251, 251);
   border-radius: 15px;
   margin: 10px; 
@@ -476,10 +490,11 @@ button {
 .troyanosbancarios {
   grid-area: troyanosbancarios;
   width: 200px;
-  background-color: #f2f2f2;
+  background-color: rgb(176, 205, 218,80);
   box-shadow: 0 0 3px rgb(251, 251, 251);
   border-radius: 15px;
   margin: 10px; 
+ 
 
 }
 .troyanosbancarios img {
@@ -491,10 +506,11 @@ button {
 .pishing {
   grid-area: pishing;
   width: 200px;
-  background-color: #f2f2f2;
+  background-color: rgb(176, 205, 218,80);
   box-shadow: 0 0 3px rgb(251, 251, 251);
   border-radius: 15px;
   margin: 10px; 
+ 
 
 }
 .pishing img {
@@ -537,6 +553,7 @@ text-align: justify;
 padding-left: 60px;
 padding-bottom: 60px;
 }
+
 
 /*animacion del cubo*/
 

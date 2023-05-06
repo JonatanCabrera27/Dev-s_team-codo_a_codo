@@ -35,47 +35,6 @@
 }
 
 
-/*
-.animacion1 {
-  grid-area:animacion1;
-  position:relative;
-  animation-name:movimiento;
-  animation-duration:15s;
-  }
-
- .animacion1 img{
-  width: 100px;
- }
-  
-  @keyframes movimiento {
-    0%{
-      left: 0px;
-      top: 0px;
-      border-radius: 0%;
-      
-    }
-    25%{
-      left: 100px;
-      top: 0px;
-      border-radius: 50%;
-
-    }
-    50%{
-      left: 100px;
-      top: 300px;
-      border-radius: 0%;
-    }
-    75%{
-      left: 0px;
-      top: 200px;
-      border-radius: 50%;
-    }
-    100%{
-      left: 0px;
-      top: 0px;
-      border-radius: 0%;
-    }
-  }*/
 
 .info1 {
   grid-area: info1;
@@ -418,7 +377,7 @@ button {
 
 
 /*estilos Pestaña Vunerabilidadess*/
-
+/*
 .contVulnerabilidades {
 
   display: grid;
@@ -433,9 +392,9 @@ button {
   column-gap: 20px;
 }
 
-
+*/
 /*flex para las tarjetas*/
-.itemarea {
+/*.itemarea {
 
   grid-area: 4 /2 / span 1 / 5;
 }
@@ -455,7 +414,7 @@ button {
 .foot {
   grid-area: foot;
 }
-
+*/
 .imagentop {
   grid-area: imagentop;
   margin: 20px;
@@ -465,7 +424,7 @@ button {
 #imag {
   width: 100%;
 }
-
+/*
 .infovul {
   grid-area: infovul;
   margin-right: 20px;
@@ -549,10 +508,10 @@ button {
   text-align: justify;
 
 }
-
+*/
 
 /* botones de las tarjetas del menu Vulnerabilidades*/
-.button1 {
+/*.button1 {
   background-color: #555555;
   color: aliceblue;
   font-size: 15px;
@@ -573,7 +532,7 @@ button {
   transition: 0s
 }
 
-
+*/
 
 /*animacion del cubo*/
 
@@ -690,4 +649,9 @@ h4 {
 }
 .link:visited{
   color:#c18e4b ;
+}
+
+ h4{
+  text-align: center;
+
 }

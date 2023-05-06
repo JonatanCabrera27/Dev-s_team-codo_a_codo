@@ -9,14 +9,15 @@
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./css/estilos.css">
+    
+        <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="stylesheet" href="/Devs_team-codo_a_codo/css/estilovulnerabilidades.css">
     
     <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon">
 
 </head>
 
 <body>
-    <!-- El navbar por semantica siempre va por fuera del main,dentro de una etiqueta Header -->
     <header>
         <nav class="navbar">
             <div class="navbar-logo">
@@ -40,13 +41,10 @@
             </div>
         </nav>
     </header>
+
     <main>
 
-        <div class="contVulnerabilidades">
-
-            <!-- <div class="nav">
-               
-            </div> -->
+    <div class="contVulnerabilidades">
 
             <div class="imagentop"><img id=imag src="./img/CIBERSEGURIDAD.png" alt=""></div>
 
@@ -71,7 +69,7 @@
                     se ofrecen algunos ejemplos de ciberamenazas comunes. </p>
             </div>
 
-            <div class="itemarea contenedorflex">
+           <!-- <div class="itemarea contenedorflex">-->
                 <div class="ransomware">
                     <img src="./img/ransomware.jpg" alt="ramsomware">
                     <div class="textocard">
@@ -81,7 +79,7 @@
                             eliminar
                             elbloqueo. Este tipo de ciberataque
                             puede ser fatal para una compañía porque implica una pérdida masiva de datos, además de
-                            perjuicios económicos. </p><br><br><br><br>
+                            perjuicios económicos. </p><br>
                         <button class="button1"
                             onclick="location.href='https://www.argentina.gob.ar/jefatura/innovacion-publica/ssetic/direccion-nacional-ciberseguridad/informes-de-la-direccion-6'"
                             target="_blank">Leer Más</button>
@@ -95,7 +93,7 @@
                         <h4>DDOS</h4><br>
                         <p>El ataque de Denegacion de Servicio o DDOS consiste en provocar la caída de un servidor
                             sobrecargando su ancho de banda. Estas acciones
-                            fuerzan la interrupción de un sitio web.</p><br><br><br><br>
+                            fuerzan la interrupción de un sitio web.</p><br>
                             <div class="divbutton1">
                         <button class="button1"
                             onclick="location.href='https://www.microsoft.com/es-ar/security/business/security-101/what-is-a-ddos-attack'">Leer
@@ -112,7 +110,7 @@
                         <h4>Troyanos Bancarios</h4><br>
                         <p>La mayor amenaza para los dispositivos móviles son los troyanos bancarios, otro software
                             malicioso que en principio parece inofensivo, pero es muy peligroso y está tras los bancos.
-                        </p><br><br><br><br>
+                        </p><br>
                         <button class="button1"
                             onclick="location.href='https://www.infospyware.com/articulos/que-son-y-como-funcionan-los-troyanos-bancarios/'">Leer
                             Más </button>
@@ -129,28 +127,31 @@
                             incitar a la descarga de datos adjuntos malintencionados que instalen malware en los
                             dispositivos de la empresa.</p>
                         <button class="button1"
-                            onclick="location.href='https://www.argentina.gob.ar/justicia/convosenlaweb/situaciones/phishing'">Leer
+                            onclick="location.href='https://www.argentina.gob.ar/justicia/convosenlaweb/situaciones/phishing'" target="_blank">Leer
                             Más </button>
                     </div>
                 </div>
-            </div>
+            <!--</div>-->
 
-            <div class="foot">
-                <nav id="footer">
-                    <a href="https://facebook.com" target="_blank">
-                        <img  src="./img/facebook.png" alt="logoFacebook">
-                    </a>
-                    <a href="https://instagram.com" target="_blank">
-                        <img  src="./img/instagram.png" alt="logo instagram">
-                    </a>
-                    <a href="mailto:valeriaaragon@gmail.com" target="_blank">
-                        <img  src="./img/gmail.png" alt="logo gmail">
-                    </a> 
-                    <p>DevsTeam @2023</p><br>
-               </nav>
-           
-        </div>
-        <script src="./js/javaScript.js"></script>
+               
+    </div>
+<footer>
+    <nav id="footer">
+        <a href="https://facebook.com" target="_blank">
+            <img width="30" src="./img/facebook.png" alt="logoFacebook">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img width="30"  src="./img/instagram.png" alt="logo instagram">
+        </a>
+        <a href="mailto:valeriaaragon@gmail.com" target="_blank">
+            <img width="30"  src="./img/gmail.png" alt="logo gmail">
+        </a> 
+        <p>DevsTeam @2023</p><br>
+   </nav>
+
+</footer>
+<script src="./js/javaScript.js"></script>
+<script src="./js/carrusel.js"></script>
 
     </body>
 

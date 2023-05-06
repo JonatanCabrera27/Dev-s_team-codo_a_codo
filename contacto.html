@@ -11,39 +11,115 @@
     <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
-        footer{
-            width: 100vw;    
-            position: fixed;
-            bottom: 0;
+        .titulo{
+            font-size: 3.6rem;
         }
-        main{
-            background-image: url("/img/fondoprincipal.png");
-            height: 100vh;
+        .subtitulo{
+            font-size: 2.5rem;
         }
-        section{
+        .texto-tamaño1{
+            font-size: .79rem;
+        } 
+        .texto-tamaño2{
+            font-size: 1.25rem;
+        }  
+        .texto-tamaño3{
+            font-size: 1.75rem;
+        }  
+        .texto-tamaño4{
+            font-size: 2.25rem;
+        }
+        .texto-tamaño5{
+            font-size: 2.75rem;
+        }
+        .texto-tamaño6{
+            font-size: 3rem;
+        }
+
+
+
+        #perfiles-card,
+        #invitacion,
+        #contacto{
             display: grid;
-            place-items: center;
-            width: 100vw;
-            padding-top: 10px;
+            place-content: center;
+            width: auto;
+            height: 50rem;
+            padding: 10px;
+        }
+        .texto-centrado{
+            text-align: center;
+        }
+        .texto-invitacion{
+            display: grid;
+            align-items: center;
+            font-size: 38px;
+            padding: 20px;
+        }
+        .imagen-invitacion img{
+            width: 640px;
+            height: auto;
+        }
+        .contenedor{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 20px;
+        }
+        .perfiles-titulo{
+            margin: 50px;
+            padding: 20px;
+            text-align: center;
         }
         .card{
             display: grid;
             place-items: center;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 3fr;
             background-color: rgb(255,255,255);
-            width:640px;
+            width:auto;
             height: 240px;
-            border-radius: 25px;
-            box-shadow: 0 4px 20px;
+            border-radius: 25px;        
+            box-shadow: 3px 2px 20px #929292;
+
         }
         .card .media img{
             padding: 20px;
             border-radius: 50%;
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
         }
         .card .card-body{
             width: auto;
+        }
+        
+        form{
+            padding: 30px;
+        }
+        
+        .form-contenedor{
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 25px;
+            box-shadow: 3px 2px 20px #929292;
+            width: 540px;
+            height: 535px;
+        }
+        .campo{
+            padding: 10px;
+            margin: 2px;
+        }
+        .label{
+            padding-left: 2px;
+            font-weight: bold;
+            font-size: .9rem;
+        }
+        .control{
+            margin-top: 10px;
+        }
+        .input{
+            border: 1px solid #929292;
+            border-radius: 5px;
+            width: 100%;
+            height: 30px;
         }
     </style>
 </head>
@@ -73,12 +149,32 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="invitacion" class="contenedor">
+            <div class="texto-invitacion">
+                <p>
+                    La seguridad en línea no es algo que deba tomarse a la ligera.
+                </p>
+            </div>
+            <div class="imagen-invitacion">
+                <img src="img/seguridad_de_datos.jpg" alt="">
+            </div>
+        </section>
+        <section id="perfiles-card">
+            <div class="perfiles-titulo">
+                <p class="subtitulo">
+                    Nuestro servicio de ciberseguridad está conformado por un equipo de 4 expertos altamente capacitados en la protección de sistemas informáticos. 
+                </p>
+            </div>
             <div class="contenedor">
-                <div class="titulo">
-                    <p>
-                        Para asesorias deje sus datos y nuestros expertos se pondran en contacto
-                    </p>
+                <div class="card">
+                    <div class="media">
+                        <img src="img/img_avatar.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, perspiciatis! Fuga, animi impedit quam minus alias sed eius consectetur illum in, recusandae, deserunt tenetur similique laborum eaque dolor exercitationem temporibus!
+                        </p>
+                    </div>
                 </div>
                 <div class="card">
                     <div class="media">
@@ -89,6 +185,80 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, perspiciatis! Fuga, animi impedit quam minus alias sed eius consectetur illum in, recusandae, deserunt tenetur similique laborum eaque dolor exercitationem temporibus!
                         </p>
                     </div>
+                </div>
+                <div class="card">
+                    <div class="media">
+                        <img src="img/img_avatar2.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, perspiciatis! Fuga, animi impedit quam minus alias sed eius consectetur illum in, recusandae, deserunt tenetur similique laborum eaque dolor exercitationem temporibus!
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="media">
+                        <img src="img/img_avatar2.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, perspiciatis! Fuga, animi impedit quam minus alias sed eius consectetur illum in, recusandae, deserunt tenetur similique laborum eaque dolor exercitationem temporibus!
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="contacto">
+            <p class="texto-tamaño4 texto-centrado">
+                Contáctanos ahora para comenzar a proteger tu negocio hoy mismo.
+            </p>
+            <div class="contenedor">
+                <div class="form-contenedor">
+                    <form action="#">
+                        <div class="contenedor">
+                            <div class="campo">
+                                <label class="label" for="">
+                                    Nombre.
+                                </label>
+                                <div class="control">
+                                    <input class="input" type="text">
+                                </div>
+                            </div>
+                            <div class="campo">
+                                <label class="label" for="">
+                                    Apellido.
+                                </label>
+                                <div class="control">
+                                    <input class="input" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="campo">
+                           <label class="label" for="">
+                                Email.
+                            </label>
+                            <div class="control">
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <label class="label" for="">
+                                Mensaje.
+                            </label>
+                            <div class="control">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <div>
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </div>
+                </div>
+                <div class="imagen-invitacion">
+                    <img src="img/seguridad_de_datos2.jpg" alt="">
                 </div>
             </div>
         </section>

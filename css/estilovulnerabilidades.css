@@ -1,0 +1,310 @@
+.contVulnerabilidades {
+
+    display: grid;
+    width: 100%;
+    background-image: url(/Devs_team-codo_a_codo/img/fondoprincipal.png);
+    column-gap: 20px;
+    row-gap: 40px;
+
+    grid-template: auto auto auto/22% 22% 22% 22%;
+
+    grid-template-areas:
+      'imagentop imagentop imagentop imagentop'
+      'contenedorcaja infovul infovul infovul'
+      'ransomware pishing ddos troyanosbancarios';
+    
+  }
+
+/*----------------------------------------------------------------*/
+/* Punto de corte para pantallas tipo tablet (menos de 920px)     */
+/*----------------------------------------------------------------*/
+@media only screen and (max-width: 920px) {
+    .contVulnerabilidades {
+      
+        grid-template: auto auto 50% auto / 40% 50%;
+
+      
+        grid-template-areas:
+            "imagentop imagentop"
+            "contenedorcaja contenedorcaja"
+            "infovul infovul"
+            "ransomware pishing"
+            "troyanosbancarios ddos";
+
+
+    }
+}
+
+/*----------------------------------------------------------------*/
+/* Punto de corte para pantallas tipo celular (menos de 600px)    */
+/*----------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+    .contVulnerabilidades {
+      
+        grid-template: auto  / auto;
+
+        grid-template-areas: 
+        "imagentop" 
+        "contenedorcaja"
+        "infovul"
+        "ransomware"
+        "pishing"
+        "troyanosbancarios"
+        "ddos";
+    }
+}
+
+
+/*----------------------------------------------------------------*/
+/* Punto de corte para pantallas entre 920px y 1280px   */
+/*----------------------------------------------------------------*/
+
+@media only screen and (min-width: 920px) and (max-width: 1280px) {
+
+    .contVulnerabilidades {
+      
+        grid-template: auto auto auto / 25% 25%;
+
+      
+        grid-template-areas:
+            "imagentop imagentop imagentop"
+            "contenedorcaja contenedorcaja contenedorcaja"
+            "infovul infovul infovul"
+            "ransomware pishing troyanosbancarios"
+            "ddos ddos ddos";
+    }
+
+}
+  
+
+  .imagentop {
+    grid-area: imagentop;
+    margin-left: 10%;
+    margin-right: 2%;
+    }
+  
+  #imag {
+    width: 100%;
+  }
+  
+  .infovul {
+    grid-area: infovul;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background-color: rgb(176, 205, 218, 80);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: justify;
+    padding-left: 60px;
+  
+  }
+
+  .infovul:hover{
+    background-color: rgb(181, 248, 235);
+  }
+  
+  .ransomware {
+    grid-area: ransomware;
+    width: 200px;
+    margin-left: 110px;
+    margin-bottom: 20px;
+    background-color: rgb(176, 205, 218, 80);
+    box-shadow: 0 0 3px rgb(251, 251, 251);
+    border-radius: 15px;
+    margin-top: 20px;
+ 
+      }
+  
+  .ransomware img {
+    width: 100%;
+    border-radius: 15px;
+  
+  }
+
+  .ransomware:hover{
+    background-color: rgb(181, 248, 235);
+  }
+
+  .ransomware h4{
+        text-align: center;
+ }
+  
+  .ddos {
+    grid-area: ddos;
+    width: 200px;
+    margin-left: 110px;
+    margin-bottom: 20px;
+    background-color: rgb(176, 205, 218, 80);
+    box-shadow: 0 0 3px rgb(251, 251, 251);
+    border-radius: 15px;
+    margin-top: 20px;
+  
+  
+  }
+  
+  .ddos img {
+    width: 100%;
+    border-radius: 15px;
+  
+  }
+
+  .ddos:hover{
+    background-color: rgb(181, 248, 235);
+  }
+  
+  .ddos h4{
+    text-align: center;
+}
+  .troyanosbancarios {
+    grid-area: troyanosbancarios;
+    width: 200px;
+    margin-left: 110px;
+    margin-bottom: 20px;
+    background-color: rgb(176, 205, 218, 80);
+    box-shadow: 0 0 3px rgb(251, 251, 251);
+    border-radius: 15px;
+    margin-top: 20px;
+   
+  
+  
+  }
+  
+  .troyanosbancarios img {
+    width: 100%;
+    border-radius: 15px;
+  
+  }
+  
+  .troyanosbancarios:hover{
+    background-color: rgb(181, 248, 235);
+  }
+
+  .troyanosbancarios h4{
+    text-align: center;
+
+  
+}
+  .pishing {
+    grid-area: pishing;
+    width: 200px;
+    margin-left: 110px;
+    margin-bottom: 20px;
+    background-color: rgb(176, 205, 218, 80);
+    box-shadow: 0 0 3px rgb(251, 251, 251);
+    border-radius: 15px;
+    margin-top: 20px;
+
+  
+  
+  }
+  
+  .pishing img {
+    width: 100%;
+    border-radius: 15px;
+  
+  }
+
+  .pishing:hover{
+    background-color: rgb(181, 248, 235);
+  }
+
+  .pishing h4{
+    text-align: center;
+
+}
+  
+  .textocard {
+    padding: 10px;
+    text-align:justify;
+  
+  }
+  
+  
+  /* botones de las tarjetas del menu Vulnerabilidades*/
+  .button1 {
+    background-color: #555555;
+    color: aliceblue;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+
+  }
+  
+  .button1:hover {
+    background-color: #4b4c6c;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+    
+    /*animacion del cubo*/
+  
+  .contenedorcaja {
+    grid-area: contenedorcaja;
+    margin-left: 70px;
+  
+  }
+  
+  .caja {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px;
+    animation: girar 30s infinite;
+  }
+  
+  .cara {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    backface-visibility: hidden;
+  }
+  
+  .cara img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .cara1 {
+    transform: translateZ(100px);
+  }
+  
+  .cara2 {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  
+  .cara3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+  }
+  
+  .cara4 {
+    transform: rotateX(180deg) rotateZ(90deg) translateZ(100px);
+  }
+  
+  .cara5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+  }
+  
+  .cara6 {
+    transform: rotateX(-90deg) rotateZ(90deg) translateZ(100px);
+  }
+  
+  @keyframes girar {
+    50% {
+      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+  
+  }
+  
+ 

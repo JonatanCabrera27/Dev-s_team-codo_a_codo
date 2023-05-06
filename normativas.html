@@ -15,19 +15,29 @@
 
 <body>
     <header>
-
-        <nav>
-            <ul>
-                <a href="index.html"><img width="45" src="./img/icono.png" alt="index.html"></a>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./normativas.html">Normativas</a></li>
-                <li><a href="./vulnerabilidades.html">Vulnerabilidades</a></li>
-                <li><a href="./noticias.html">Noticias</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <div class="logo">
+                    <a href="index.html"><img src="./img/icono.png" alt="index.html"></a>
+                </div>
+                <div class="navbar-burger">
+                    <button id="bBurger">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div id="links" class="navbar-inicio">
+                <a href="./index.html">Inicio</a>
+                <a href="./normativas.html">Normativas</a>
+                <a href="./vulnerabilidades.html">Vulnerabilidades</a>
+                <a href="./noticias.html">Noticias</a>
+                <a href="./contacto.html">Contacto</a>
+            </div>
         </nav>
-
     </header>
+
     <main>
         <div>
             <div class="imagentop">
@@ -98,9 +108,12 @@
             <a href="mailto:valeriaaragon@gmail.com" target="_blank">
                 <img width="30" src="./img/gmail.png" alt="logo gmail">
             </a>
-            <p>DevsTeams @2023</p><br>
+            <p>DevsTeam @2023</p><br>
         </nav>
     </footer>
+
+    <script src="./js/javaScript.js"></script>
+    <script src="./js/carrusel.js"></script>
 </body>
 
 </html>

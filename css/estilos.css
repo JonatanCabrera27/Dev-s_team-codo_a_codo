@@ -32,6 +32,17 @@
   grid-area: aside;
   background-color: rgb(176, 205, 218, 80);
   border-radius: 15px;
+  padding:5px;
+  
+}
+
+.aside p{
+  text-align: center;
+}
+.aside a{
+  text-align: left;
+  color:#0f0e0e;
+ 
 }
 
 

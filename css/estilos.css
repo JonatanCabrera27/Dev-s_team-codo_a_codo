@@ -53,6 +53,7 @@
   background-color: rgb(176, 205, 218, 80);
   border-radius: 15px;
   padding: 15px;
+  line-height: 25px;
 }
 
 .info1 h1 {
@@ -665,4 +666,36 @@ h4 {
  h4{
   text-align: center;
 
+}
+
+
+/*aside*/
+.aside{
+  text-align: center;
+  padding:15px;
+  line-height: 50px;
+}
+
+.aside p{
+  color:#030e15;
+  padding-top: 25px;
+  font-size: 18px;
+
+}
+
+.aside img{
+  border-radius: 50%;
+  border: solid #467695 4px;
+  box-shadow: 8px 8px 8px black;
+}
+
+/* hover en el info 1 y 2 y aside*/
+.info1:hover{
+  background: linear-gradient(#5de0e6, #004aad);
+}
+.info2:hover{
+  background: linear-gradient(#5de0e6, #004aad);
+}
+.aside:hover{
+  background: linear-gradient(#5de0e6, #004aad);
 }

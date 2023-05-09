@@ -20,7 +20,7 @@
 
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  background-image: url(/img/fondoprincipal.png);
+  background-image: url("../img/fondoprincipal.png");
   background-color: rgb(33, 37, 41);
   border: 5px solid rgb(33, 37, 41);
   padding: 20px;

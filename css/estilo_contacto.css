@@ -70,6 +70,12 @@ form{
     width: 35rem;
     height: 535px;
 }
+.contenedor-campo{
+    display: flex;
+}
+.contenedor-campo .campo{
+    width: 100%;
+}
 .campo{
     padding: 10px;
     margin: 2px;
@@ -85,16 +91,23 @@ form{
 .input{
     border: 1px solid #929292;
     border-radius: 5px;
-    width: 100%;
     height: 30px;
-
+    padding: 7px;
+}
+.input#nombre,
+.input#apellido{
+    width: 224px;
+}
+.input#mail{
+    width: 489px;
 }
 .textarea{
     border: 1px solid #929292;
     border-radius: 5px;
-    width: 100%;
+    width: 489px;
     height: auto;
     resize: none;
+    padding: 7px;
 }
 .control-boton{
     display: flex;

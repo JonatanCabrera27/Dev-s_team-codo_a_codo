@@ -116,24 +116,24 @@
             <div class="contenedor">
                 <div  class="form-contenedor">
                     <form >
-                        <div class="contenedor">
+                        <div class="contenedor-campo">
                             <div class="campo">
                                 <label class="label" for="nombre"> Nombre </label>
                                 <div class="control">
-                                    <input class="input" type="text" id="nombre" name="nombre">
+                                    <input class="input" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
                                 </div>
                             </div>
                             <div class="campo">
                                 <label class="label" for="apellido"> Apellido </label>
                                 <div class="control">
-                                    <input class="input" type="text" id="apellido" name="apellido">
+                                    <input class="input" type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
                                 </div>
                             </div>
                         </div>
                         <div class="campo">
                             <label class="label" for="mail"> Email  </label> 
                             <div class="control">
-                                <input class="input" type="email" id="mail" name="mail">
+                                <input class="input" type="email" id="mail" name="mail" placeholder="ejemplo@gmail.com">
                             </div>
                         </div>
                         <div class="campo">
@@ -141,12 +141,14 @@
                                 Mensaje
                             </label>
                             <div class="control">
-                                <textarea class="textarea" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                                <textarea class="textarea" placeholder="Dejenos su mensaje..." name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                             </div>
                         </div>
                   
                     <div class="control-boton">
-                        <input class="btn-submit" type="submit" value="¡CONTACTANOS YA!" onclick="return validarFormulario()">
+                        <button class="btn-submit" type="submit" onclick="return validarFormulario()">
+                            <span>¡CONTACTANOS YA!</span>
+                        </button>
                     </div>
                 </form>
                 </div>

@@ -452,12 +452,12 @@ button {
 */
 .imagentop {
   grid-area: imagentop;
-  margin: 20px;
-
+  margin-left: 10%;
+  margin-right: 2%;
 }
 
 #imag {
-  width: 100%;
+  width: 90%;
 }
 
 /*

@@ -27,22 +27,22 @@
 
 }
 
-
 .aside {
   grid-area: aside;
   background-color: rgb(176, 205, 218, 80);
   border-radius: 15px;
-  padding:5px;
-  
+  padding: 5px;
+
 }
 
-.aside p{
+.aside p {
   text-align: center;
 }
-.aside a{
+
+.aside a {
   text-align: left;
-  color:#0f0e0e;
- 
+  color: #0f0e0e;
+
 }
 
 
@@ -64,14 +64,26 @@
 
   grid-area: video1;
 }
+.video1 iframe{
+  width:400px;
+  height:400px;
+}
 
 .video2 {
 
   grid-area: video2;
 }
+.video2 iframe{
+  width:400px;
+  height:400px;
+}
 
 .video3 {
   grid-area: video3;
+}
+.video3 iframe{
+  width:400px;
+  height:400px;
 }
 
 .info2 {
@@ -178,6 +190,7 @@
   .slider-container,
   .slider-item {
     width: auto;
+    object-fit: contain;
   }
 
   .navbar {
@@ -219,6 +232,12 @@
     ;
 
   }
+
+  slider-container,
+  .slider-item {
+    width: auto;
+    object-fit: contain;
+  }
 }
 
 
@@ -235,7 +254,11 @@
     ;
   }
 
-
+  .slider-container,
+  .slider-item {
+    width: auto;
+    object-fit: cover;
+  }
 }
 
 
@@ -436,6 +459,7 @@ button {
 #imag {
   width: 100%;
 }
+
 /*
 .infovul {
   grid-area: infovul;
@@ -629,17 +653,18 @@ h4 {
   box-shadow: 5px 5px 5px black;
   text-shadow: 5px 5px #497E2C;
 }
+
 /* #imagen{
   width: 40px;
   text-align: center;
   margin: auto;
 } */
-.normas{
+.normas {
   text-align: center;
   color: rgb(219, 213, 213);
   font-style: oblique;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight:700;
+  font-weight: 700;
   font-weight: 300;
   font-size: 20px;
   background-color: #467695;
@@ -650,52 +675,58 @@ h4 {
   margin: 30px;
   text-shadow: black;
 }
-.video{
+
+.video {
   text-align: center;
 }
-.normas:hover{
+
+.normas:hover {
   background-color: #497E2C;
 }
-.link{
+
+.link {
   color: black;
 }
-.link:visited{
-  color:#c18e4b ;
+
+.link:visited {
+  color: #c18e4b;
 }
 
- h4{
+h4 {
   text-align: center;
 
 }
 
 
 /*aside*/
-.aside{
+.aside {
   text-align: center;
-  padding:15px;
+  padding: 15px;
   line-height: 50px;
 }
 
-.aside p{
-  color:#030e15;
+.aside p {
+  color: #030e15;
   padding-top: 25px;
   font-size: 18px;
 
 }
 
-.aside img{
+.aside img {
   border-radius: 50%;
   border: solid #467695 4px;
   box-shadow: 8px 8px 8px black;
 }
 
 /* hover en el info 1 y 2 y aside*/
-.info1:hover{
+.info1:hover {
   background: linear-gradient(#5de0e6, #004aad);
 }
-.info2:hover{
+
+.info2:hover {
   background: linear-gradient(#5de0e6, #004aad);
 }
-.aside:hover{
+
+.aside:hover {
   background: linear-gradient(#5de0e6, #004aad);
 }

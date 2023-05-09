@@ -2,7 +2,7 @@
 
     display: grid;
     width: 100%;
-    background-image: url(/Devs_team-codo_a_codo/img/fondoprincipal.png);
+   /* background-image: url(/Devs_team-codo_a_codo/img/fondoprincipal.png);*/
     column-gap: 20px;
     row-gap: 40px;
 
@@ -81,6 +81,7 @@
     grid-area: imagentop;
     margin-left: 10%;
     margin-right: 2%;
+ 
     }
   
   #imag {
@@ -97,6 +98,7 @@
     padding: 15px;
     text-align: justify;
     padding-left: 60px;
+    box-shadow: 0 0 10px rgb(11, 12, 41);
   
   }
 
@@ -110,7 +112,7 @@
     margin-left: 110px;
     margin-bottom: 20px;
     background-color: rgb(176, 205, 218, 80);
-    box-shadow: 0 0 3px rgb(251, 251, 251);
+    box-shadow: 0 0 10px rgb(11, 12, 41);
     border-radius: 15px;
     margin-top: 20px;
  
@@ -136,7 +138,7 @@
     margin-left: 110px;
     margin-bottom: 20px;
     background-color: rgb(176, 205, 218, 80);
-    box-shadow: 0 0 3px rgb(251, 251, 251);
+    box-shadow: 0 0 10px rgb(11, 12, 41);
     border-radius: 15px;
     margin-top: 20px;
   
@@ -162,7 +164,7 @@
     margin-left: 110px;
     margin-bottom: 20px;
     background-color: rgb(176, 205, 218, 80);
-    box-shadow: 0 0 3px rgb(251, 251, 251);
+    box-shadow: 0 0 10px rgb(11, 12, 41);
     border-radius: 15px;
     margin-top: 20px;
    
@@ -191,7 +193,7 @@
     margin-left: 110px;
     margin-bottom: 20px;
     background-color: rgb(176, 205, 218, 80);
-    box-shadow: 0 0 3px rgb(251, 251, 251);
+    box-shadow: 0 0 10px rgb(11, 12, 41);
     border-radius: 15px;
     margin-top: 20px;
 

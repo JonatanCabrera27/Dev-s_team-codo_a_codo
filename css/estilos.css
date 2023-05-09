@@ -64,14 +64,26 @@
 
   grid-area: video1;
 }
+.video1 iframe{
+  width:400px;
+  height:400px;
+}
 
 .video2 {
 
   grid-area: video2;
 }
+.video2 iframe{
+  width:400px;
+  height:400px;
+}
 
 .video3 {
   grid-area: video3;
+}
+.video3 iframe{
+  width:400px;
+  height:400px;
 }
 
 .info2 {

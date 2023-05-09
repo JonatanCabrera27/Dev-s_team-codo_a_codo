@@ -106,47 +106,40 @@
             </p>
             <div class="contenedor">
                 <div  class="form-contenedor">
-                    <form action="#">
+                    <form >
                         <div class="contenedor">
                             <div class="campo">
-                                <label class="label" for="">
-                                    Nombre
-                                </label>
+                                <label class="label" for="nombre"> Nombre </label>
                                 <div class="control">
-                                    <input class="input" type="text">
+                                    <input class="input" type="text" id="nombre" name="nombre">
                                 </div>
                             </div>
                             <div class="campo">
-                                <label class="label" for="">
-                                    Apellido
-                                </label>
+                                <label class="label" for="apellido"> Apellido </label>
                                 <div class="control">
-                                    <input class="input" type="text">
+                                    <input class="input" type="text" id="apellido" name="apellido">
                                 </div>
                             </div>
                         </div>
                         <div class="campo">
-                            <label class="label" for="">
-                                Email
-                            </label>
+                            <label class="label" for="mail"> Email  </label> 
                             <div class="control">
-                                <input class="input" type="text">
+                                <input class="input" type="email" id="mail" name="mail">
                             </div>
                         </div>
                         <div class="campo">
-                            <label class="label" for="">
+                            <label class="label" for="mensaje">
                                 Mensaje
                             </label>
                             <div class="control">
-                                <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+                                <textarea class="textarea" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                             </div>
                         </div>
-                    </form>
+                  
                     <div class="control-boton">
-                        <button class="btn-submit" type="submit">
-                            ¡CONTACTANOS YA!
-                        </button>
+                        <input class="btn-submit" type="submit" value="¡CONTACTANOS YA!" onclick="return validarFormulario()">
                     </div>
+                </form>
                 </div>
                 <div class="imagen-invitacion">
                     <img src="img/seguridad_de_datos2.jpg" alt="">
@@ -169,6 +162,7 @@
         </nav>
 
     </footer>
+    <script src="./js/validacionFormulario.js"></script>
     <script src="./js/javaScript.js"></script>
 </body>
 

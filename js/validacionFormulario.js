@@ -40,6 +40,7 @@ console.log("el mail a validar es" +mail);
 	// Using test we can check if the text match the pattern
 	if( validEmail.test(mail) ){
 		//alert("La dirección de email " + mail + " es correcta.");
+        alert("Muchas Gracias por contactarse con nosotros. Estaremos respondiendo a la brevedad");
 		return true;
 	}else{
 		alert('La dirección de email es incorrecta. Debe contener la forma: nombre usuario + @ + servidor + dominio');

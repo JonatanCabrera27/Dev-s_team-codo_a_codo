@@ -4,7 +4,7 @@
     display: grid;
     place-content: center;
     width: auto;
-    height: 50rem;
+    height: 45rem;
     margin: 10px;
 }
 .texto-centrado{
@@ -24,6 +24,10 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 5px;
+}
+.contenedor-cards{
+    display: grid;
+    grid-template: ;
 }
 .perfiles-titulo{
     padding-bottom: 20px;

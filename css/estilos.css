@@ -20,7 +20,7 @@
 
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  background-image: url(/Devs_team-codo_a_codo/img/fondoprincipal.png);
+  background-image: url("../img/fondoprincipal.png");
   background-color: rgb(33, 37, 41);
   border: 5px solid rgb(33, 37, 41);
   padding: 20px;
@@ -452,12 +452,12 @@ button {
 */
 .imagentop {
   grid-area: imagentop;
-  margin: 20px;
-
+  margin-left: 10%;
+  margin-right: 2%;
 }
 
 #imag {
-  width: 100%;
+  width: 90%;
 }
 
 /*
@@ -646,12 +646,13 @@ h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 25px;
   background-color: #285878;
-  border-radius: 30px;
+  border-radius: 20px;
   border: 0px solid black;
   box-shadow: 5px 5px 5px black;
   text-shadow: 5px 5px #497E2C;
+  margin: 25px;
 }
 
 /* #imagen{

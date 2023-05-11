@@ -1,12 +1,17 @@
 #perfiles-card,
-#invitacion,
 #contacto{
     display: grid;
-    place-content: center;
     width: auto;
     height: 45rem;
-    margin: 10px;
 }
+
+#invitacion{
+    display:grid;
+    width: auto;
+    height: 40rem;
+    
+}
+
 .texto-centrado{
     text-align: center;
 }
@@ -16,18 +21,22 @@
     font-size: 38px;
     padding: 20px;
 }
-.imagen-invitacion img{
-    width: 40rem;
-    height: auto;
+.imagen-invitacion img,
+.imagen-invitacion2 img{
+    width: 550px;
+    height: 630px;
 }
 .contenedor{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template:"texto-invitacion imagen-invitacion";
     gap: 5px;
+    justify-content: center;
 }
 .contenedor-cards{
     display: grid;
-    grid-template: ;
+    grid-template: "imagen-area imagen-area imagen-area imagen-area";
+    gap:20px;
+    justify-content: center;
 }
 .perfiles-titulo{
     padding-bottom: 20px;
@@ -55,10 +64,20 @@
     width: auto;
 }
 
-#titulo-contacto{
+#contacto{
+    display:grid;
+    grid-template: "titulo-contacto",
+    "contenedor-formulario";
+}
+.contenedor-formulario{
+    display:grid;
+    grid-template:"form-contenedor imagen-invitacion2";
+    gap:20px;
+    justify-content: center;
+}
+.titulo-contacto{
     margin-bottom: 40px;
     font-size: 2.25rem;
-
 }
 
 form{
@@ -209,9 +228,9 @@ form{
   
   .img-wrapper p
   {
-      background: tomato;
+      background: rgb(33, 37, 41);
       font-family: Poppins;
-      color: #fff;
+      color: white;
       text-align: center;
       text-transform: uppercase;
       margin: 0;
@@ -242,7 +261,7 @@ form{
   
   .img-wrapper ul li
   {
-      background: #333;
+      background: rgb(33, 37, 41);
       height: 40px;
       width: 40px;
       text-align: center;
@@ -279,18 +298,19 @@ form{
   
   .img-wrapper ul li a
   {
-      color: tomato;
-      background: rgba(255,255,255,0);
+      color: white;      
+      background: rgb(33, 37, 41);
+
   }
   
   .img-wrapper ul li i
   {
-      color: tomato;
-      background: rgba(255,255,255,0);
+      color: white;
+      background: rgb(33, 37, 41);
   }
   
   .img-wrapper ul li i:hover
   {
       color: #fff;
-      background: rgba(255,255,255,0);
+      background: rgb(33, 37, 41);
   }

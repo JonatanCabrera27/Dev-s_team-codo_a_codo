@@ -731,3 +731,31 @@ h4 {
 .aside:hover {
   background: linear-gradient(#5de0e6, #004aad);
 }
+
+
+/*noticias*/
+
+.noticiasApi{
+  color: rgb(14, 13, 13);
+  background: linear-gradient(#5de0e6, #004aad);
+  padding: 10px;
+  border-radius: 20px;
+  margin-left:150px;
+  margin-right: 160px;
+  margin-bottom: 20px;
+  text-align: justify;
+    
+}
+
+.noticiasApi h2, h4{
+  text-align: center;
+ 
+}
+
+#imanoti{
+  width:350px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
+}

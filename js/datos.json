@@ -1,0 +1,40 @@
+{
+    "articulos": [
+        {
+            "titulo": "Ciberseguridad: recomendaciones para evitar el robo de información personal a través de las cookies",
+            "descripcion": "Mucho se habla sobre las ventajas y desventajas en materia de privacidad de estos simples archivos. Sin embargo, pocos conocen las consecuencias que puede tener el robo de ellos y las maneras de protegerse de posibles ataques .",
+            "contenido": "En los últimos meses, el cuestionamiento sobre la función de las cookies ha estado en boca de todos, principalmente desde que Google anunció que cancelará la función de almacenamiento de datos individuales por parte de terceros para 2024 en su navegador Chrome. Aunque a priori esta medida apunta a reforzar la privacidad y muchos son los que ven esto como un nuevo beneficio, lo concreto es que estos miniarchivos seguirán existiendo y con ellos la posibilidad de sufrir lo que también se conoce como secuestro de sesión.",
+            "urlToImage": "https://tn.com.ar/resizer/hDsX1k8EWOty5H6oFiiNObCPKiU=/1440x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/AB6I5IHRYVG2VLHE37PEZOGL5Q.png"
+        },
+        {
+            "titulo": "El secuestro de datos o ransomware se incrementó en el mundo, así se puede prevenir",
+            "descripcion": "El sector educativo fue el más afectado por este tipo de ataque",
+            "contenido": "El secuestro de datos o ataques de ransomware está dirigido especialmente a las empresas con la idea de pedir un rescate por esa información.Una situación que tuvo su pico más alto en el último año desde 2020, según un estudio realizado por Sophos, empresa de ciberseguridad. Hay tres prácticas que pueden ayudar en el proceso: Fortalecer los sistemas de seguridad con herramientas que eviten la explotación de las vulnerabilidades y el robo de credenciales. Para este caso también existen tecnologías de respuesta automática y otras que investigación continuamente la situación en los sistemas de las compañías.Estar listos para un ataque, contando con copias de seguridad actualizadas y con un plan de respuesta que agilice los tiempos de respuesta.Mantener actualizados los parches de seguridad y revisar continuamente el rendimiento de las herramientas de protección.",
+            "urlToImage": "https://www.infobae.com/new-resizer/IvYEUJpa8Z0Ah2FbanSUc_45NNI=/992x661/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/XQUS5SVH2ZBV5AFUW5FPY6HCWA.jpg"
+        },
+        {
+            "titulo": "Keyloggers, la manera en que un ciberdelincuente espía el teclado de mi computador",
+            "descripcion": "Los delincuentes roban a la información usando el sonido que se produce al usar este accesorio",
+            "contenido": "Actualmente, hay muchas modalidades que implementan los ciberdelincuentes para robar la información personal de los usuarios. Normalmente, lo hacen intentan engañarlo para que acceda a una web falsa y dé los datos, pero recientemente surgió una alternativa en la que suplantan una entidad y roban la información dependiendo del sonido que se produce al usar el teclado.Esta modalidad se le conoce como keyloggers o registradores de pulsaciones, que son un tipo de malware que se encarga de monitorear la pulsación y seguimiento de cada tecla, de esta forma son capaces de saber cuáles son las letras usadas y conocer las claves de las personas.“Las tasas de cifrado han vuelto a niveles muy altos después de una caída temporal durante la pandemia, lo que sin duda es preocupante. Los equipos de ransomware han estado refinando sus metodologías de ataque y acelerando sus ataques para reducir el tiempo que tardan los defensores en interrumpir sus esquemas”, afirmó Chester Wisniewski, CTO de campo de Sophos.",
+            "urlToImage": "https://www.infobae.com/new-resizer/jG8SEFdyl1J4Kr_oyBm1Wc1cOss=/992x661/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/IHX4DR22XFHBJOLZPQV7BO3SWM.jpg"
+        },
+        {
+            "titulo": "Seis señales que alertan cuando mi celular tiene virus, está robando datos y no lo sabía ",
+            "descripcion": "Cuando un teléfono está infectado se corre el riesgo de perder información personal",
+            "contenido": "Tener el celular con virus es contar con una larga lista de problemas porque los ciberdelincuentes pueden estar tomando el control para acceder a la cámara, el micrófono, los datos personales y mucho más.Por eso, si no hay una aplicación especializada en ciberseguridad en el móvil que detecte el ataque, hay varias alertas que indican que una situación peligrosa está ocurriendo.Todas estas señales hay que tomarlas con cuidado porque no siempre garantizan que el dispositivo está en riesgo, sino que pueden ser otro problema. Así mismo, puede pasar que un virus pase desapercibido y no se presente un cambio significativo en el rendimiento. Ante este panorama es importante tener en cuenta todas estas alertas y tomar medidas de protección para resolver el problema.",
+            "urlToImage": "https://www.infobae.com/new-resizer/DJQg1jtV6KL-UUojIrPWoAsZZec=/992x606/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/4AX2IRCJO5B35FQBXTTMEXLE3I.jpg"
+        },
+        {
+            "titulo": "Cinco consejos de ciberseguridad para tener la mejor contraseña ",
+            "descripcion": "“123456789″, “password”, “11111111″ y “00000000″ son las claves más usadas en el mundo",
+            "contenido": "En la actualidad, todas las plataformas que se utilizan diariamente cuentan con un acceso por medio de un correo o nombre de usuario y una contraseña. Aunque este elemento es crucial para la seguridad de la cuenta, muchas personas utilizan combinaciones predecibles e inseguras que ponen en riesgo sus datos personales.Desde el año 2013, todos los primeros jueves de mayo se realiza el Día Mundial de la Contraseña, con el que se busca fomentar los buenos hábitos de ciberseguridad que ayuden a elaborar mejores claves de acceso a cuentas personales y además, señalar la importancia de la seguridad al momento de establecer una nueva. Claves como “password”, “123456789″, “11111111″, “00000000″ son extremadamente inseguras no solo porque son comunes sino porque son demasiado obvias como para ofrecer algún nivel de seguridad.Estas son las primeras combinaciones que un sistema automático intentaría para forzar el acceso de un criminal a la cuenta.",
+            "urlToImage": "https://www.infobae.com/new-resizer/RzT0BkvkUx0BZyc5F1CE5nobfzU=/992x606/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/7JZ4O5OX6RFQLHC5NEM2DUQXMA.jpg"
+        },
+        {
+            "titulo": "Cómo protegerse de los riesgos de la computación cuántica",
+            "descripcion": "IBM Quantum Safe es una de las opciones para analizar y priorizar riesgos en tiempo real",
+            "contenido": "La computación cuántica es el siguiente paso de la tecnología actual. Si bien tiene una serie de beneficios que mejoran la productividad, también representa un riesgo para la seguridad al tener la capacidad de superar los protocolos cifrados.IBM creó un conjunto de herramientas y recursos llamado Quantum Safe, que permite resistir a la computación cuántica y ser una herramienta con la que las organizaciones, gobiernos, empresas y científicos se puedan proteger.Esta tecnología es la unión de diferentes alternativas de seguridad, que serán puestas a disposición de las organizaciones, por lo que se atacarán diferentes puntos de los riesgos.",
+            "urlToImage": "https://www.infobae.com/new-resizer/6ekkBL_gbaB29ZRqw9LDt7q8Ems=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/6POX5W37JFFSBFIAUN2NSGRFL4.webp"
+        }
+    ]
+}

@@ -27,7 +27,26 @@
             <div class="imagentop">
                 <img id=imag src="./img/CIBERSEGURIDAD-Noticias.png" alt="Noticias">
             </div>
-        <section class="noticias">
+        
+<div id="app">
+    <div v-if="error">
+        <p>Lo sentimos intente mas tarde</p>
+    </div>
+    <div v-else>
+
+
+<div   v-for="noticia in noticias" >
+    <div class="noticiasApi">
+                <h2>{{noticia.titulo}}</h2> <br>
+                <h4>{{noticia.descripcion}}</h4><br>  
+                <img id=imanoti :src="noticia.urlToImage" alt="noticia.titulo"><br>
+                <p>{{noticia.contenido}}</p><br>
+                <br>
+   
+            </div>
+</div>
+
+       <!-- <section class="noticias">
             <h2>Últimas noticias</h2>
             <article>
                 <h3>Ciberseguridad: recomendaciones para evitar el robo de información personal a través de las cookies
@@ -57,12 +76,14 @@
                         más</a>
                 </p>
             </article>
-        </section>
+        </section>-->
         <footer id="idfooter">
            
         </footer>
         <script src="./js/index.js"></script>
         <script src="./js/javaScript.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+       <script src="./js/main.js"></script>
        
     </body>
 

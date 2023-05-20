@@ -1,98 +1,98 @@
-#perfiles-card,
-#contacto{
-    display: grid;
-    width: auto;
-    height: 45rem;
+body{
+    font-size: 16px;
 }
+main{
+    width: 100%;
+    height: auto;
+}
+
 
 #invitacion{
     display:grid;
+    grid-template: "texto-invitacion imagen-invitacion" 1fr;
     width: auto;
-    height: 40rem;
+    height: 35rem;
+    place-items: center;
+}
+
+.texto-invitacion{
+    font-size: 2em;
+    text-align: center;
+    padding: .5em;
+    font-weight: bold;
+}
+
+.imagen-invitacion img,
+.imagen-invitacion2 img{
+    width: 100%;
+    height: 80%;
+}
+
+#perfiles-card{
+    display: grid;
+    grid-template: "perfiles-titulo "8rem
+    "perfiles-cards" 25rem;
+}
+
+
+.contenedor-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    padding: 0 1em;
+}
+
+.perfiles-titulo p{
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
     
 }
 
-.texto-centrado{
-    text-align: center;
-}
-.texto-invitacion{
-    display: grid;
-    align-items: center;
-    font-size: 38px;
-    padding: 20px;
-}
-.imagen-invitacion img,
-.imagen-invitacion2 img{
-    width: 550px;
-    height: 630px;
-}
-.contenedor{
-    display: grid;
-    grid-template:"texto-invitacion imagen-invitacion";
-    gap: 5px;
-    justify-content: center;
-}
-.contenedor-cards{
-    display: grid;
-    grid-template: "imagen-area imagen-area imagen-area imagen-area";
-    gap:20px;
-    justify-content: center;
-}
-.perfiles-titulo{
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 2.5rem;
-}
-.card{
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 3fr;
-    background-color: rgb(255,255,255);
-    width: auto;
-    height: 240px;
-    border-radius: 25px;        
-    box-shadow: 3px 2px 10px #929292;
-
-}
-.card .media img{
-    padding: 20px;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
-.card .card-body{
-    width: auto;
+.img-wrapper,
+.img-wrapper img{
+    width: 100%;
+    height: 23.5em;
 }
 
 #contacto{
     display:grid;
-    grid-template: "titulo-contacto",
+    grid-template: "titulo-contacto" 9em
     "contenedor-formulario";
+    height: fit-content;
 }
+
 .contenedor-formulario{
     display:grid;
-    grid-template:"form-contenedor imagen-invitacion2";
-    gap:20px;
-    justify-content: center;
+    grid-template:"form-contenedor imagen-invitacion2" 1fr;
+    gap:1.4rem;
+    padding: 0 2rem;
+    place-items: center;
+
 }
+
 .titulo-contacto{
-    margin-bottom: 40px;
+    margin-top: .85em;
+    text-align: center;
     font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.form-contenedor{
+    border-radius: 1.563rem;
+    box-shadow: 3px 2px 20px #929292;
+    width: fit-content;
+    height: auto;
 }
 
 form{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 1.25rem;
+
 }
-.form-contenedor{
-    margin-top: 40px;
-    border-radius: 25px;
-    box-shadow: 3px 2px 20px #929292;
-    width: 35rem;
-    height: 535px;
-}
+
 .contenedor-campo{
     display: flex;
 }
@@ -100,8 +100,8 @@ form{
     width: 100%;
 }
 .campo{
-    padding: 10px;
-    margin: 2px;
+    padding: 0.625em;
+    margin: 0.125em;
 }
 .label{
     padding-left: 2px;
@@ -109,36 +109,43 @@ form{
     font-size: .9rem;
 }
 .control{
-    margin-top: 10px;
+    margin-top: .625rem;
 }
+
 .input{
     border: 1px solid #929292;
     border-radius: 5px;
-    height: 30px;
+    height: 1.875rem;
     padding: 7px;
 }
+
 .input#nombre,
 .input#apellido{
-    width: 224px;
+    width: 10em;
 }
+
 .input#mail{
-    width: 489px;
+    width: 23em;
 }
+
 .textarea{
     border: 1px solid #929292;
     border-radius: 5px;
-    width: 489px;
+    width: 23em;
     height: auto;
     resize: none;
     padding: 7px;
 }
+
 .control-boton{
     display: flex;
     width: 100%;
+    height: auto;
     justify-content: center;
+    margin-top: .5rem;
 }
 
- .btn-submit{
+.btn-submit{
     width: 89%;
     margin: 0px 1rem 0px 1rem ;
     border: 1px solid;
@@ -158,159 +165,324 @@ form{
 .btn-submit span{
     position: relative;
     z-index: 2;
-  }
-  
-  .btn-submit:after{
+}
+
+.btn-submit:after{
+position: absolute;
+content: "";
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+background-color: rgb(33, 37, 41);
+transition: all .35s;
+}
+
+.btn-submit:hover{
+color: #fff;
+}
+
+.btn-submit:hover:after{
+width: 100%;
+}
+
+.img-wrapper{
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+}  
+.img-wrapper:before{
+    content: '';
     position: absolute;
-    content: "";
+    top: 0;
+    left: 180%;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,.3);
+    z-index: 1;
+    transform: skew(45deg);
+    transition: .5s;
+} 
+.img-wrapper:hover:before{
+    left: -180%;
+}  
+.img-wrapper img{
+    filter: grayscale(100%);
+    transition: 2s;
+}
+.img-wrapper:hover img{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.img-wrapper p{
+    background: rgb(33, 37, 41);
+    font-family: Poppins;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: right;
+    transition: 1s;
+}
+.img-wrapper:hover p{
+    transform: perspective(400px) rotateY(0deg);
+}
+.img-wrapper ul{
+    position: absolute;
     top: 0;
     left: 0;
-    width: 0;
-    height: 100%;
-    background-color: rgb(33, 37, 41);
-    transition: all .35s;
-  }
-  
-  .btn-submit:hover{
-    color: #fff;
-  }
-  
-  .btn-submit:hover:after{
-    width: 100%;
-  }
-  .image-area
-  {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      position: relative;
-  }
-  
-  .img-wrapper
-  {
-      width: 300px;
-      height: 400px;
-      position: relative;
-      overflow: hidden;
-  }
-  
-  .img-wrapper:before
-  {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 180%;
-      height: 100%;
-      width: 100%;
-      background: rgba(255,255,255,.3);
-      z-index: 1;
-      transform: skew(45deg);
-      transition: .5s;
-  }
-  
-  .img-wrapper:hover:before
-  {
-      left: -180%;
-  }
-  
-  .img-wrapper img
-  {
-      height: 400px;
-      width: 300px;
-      filter: grayscale(100%);
-      transition: 2s;
-  }
-  .img-wrapper:hover img
-  {
-      filter: grayscale(0%);
-      transform: scale(1.1);
-  }
-  
-  .img-wrapper p
-  {
-      background: rgb(33, 37, 41);
-      font-family: Poppins;
-      color: white;
-      text-align: center;
-      text-transform: uppercase;
-      margin: 0;
-      padding: 10px 0;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      transform: perspective(400px) rotateY(90deg);
-      transform-origin: right;
-      transition: 1s;
-  }
-  
-  .img-wrapper:hover p
-  {
-      transform: perspective(400px) rotateY(0deg);
-  }
-  
-  .img-wrapper ul
-  {
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      background: rgba(255,255,255,0);
-  }
-  
-  .img-wrapper ul li
-  {
-      background: rgb(33, 37, 41);
-      height: 40px;
-      width: 40px;
-      text-align: center;
-      line-height: 40px;
-      transform: perspective(800px) rotateY(90deg);
-      transition: .5s;
-      transform-origin: left;
-  }
-  
-  .img-wrapper:hover ul li
-  {
-      transform: perspective(800px) rotateY(0deg);
-  }
-  
-  .img-wrapper:hover ul li:nth-child(1)
-  {
-      transition-delay: .2s;
-  }
-  
-  .img-wrapper:hover ul li:nth-child(2)
-  {
-      transition-delay: .6s;
-  }
-  
-  .img-wrapper:hover ul li:nth-child(3)
-  {
-      transition-delay: .8s;
-  }
-  
-  .img-wrapper:hover ul li:nth-child(4)
-  {
-      transition-delay: 1s;
-  }
-  
-  .img-wrapper ul li a
-  {
-      color: white;      
-      background: rgb(33, 37, 41);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(255,255,255,0);
+}
+.img-wrapper ul li{
+    background: rgb(33, 37, 41);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform: perspective(800px) rotateY(90deg);
+    transition: .5s;
+    transform-origin: left;
+}
+.img-wrapper:hover ul li{
+    transform: perspective(800px) rotateY(0deg);
+}
+.img-wrapper:hover ul li:nth-child(1){
+    transition-delay: .2s;
+}
+.img-wrapper:hover ul li:nth-child(2){
+    transition-delay: .6s;
+}
+.img-wrapper:hover ul li:nth-child(3){
+    transition-delay: .8s;
+}
+.img-wrapper:hover ul li:nth-child(4){
+    transition-delay: 1s;
+}
+.img-wrapper ul li a{
+    color: white;      
+    background: rgb(33, 37, 41);
 
-  }
-  
-  .img-wrapper ul li i
-  {
-      color: white;
-      background: rgb(33, 37, 41);
-  }
-  
-  .img-wrapper ul li i:hover
-  {
-      color: #fff;
-      background: rgb(33, 37, 41);
-  }
+}
+.img-wrapper ul li i{
+    color: white;
+    background: rgb(33, 37, 41);
+}
+.img-wrapper ul li i:hover{
+    color: #fff;
+    background: rgb(33, 37, 41);
+}
+
+@media screen and (min-width:1330px){
+    body{
+        font-size: 20px;
+    }
+    
+    #invitacion{
+        width: auto;
+        height: 35rem;
+    }
+
+
+    #perfiles-card{
+        display: grid;
+        grid-template: "perfiles-titulo "8em
+        "perfiles-cards" 25em;
+    }
+    .perfiles-titulo{
+        padding: 0 1em;
+    }
+    .img-wrapper,
+    .img-wrapper img{
+        width: 100%;
+        height: 23.5em;
+    }
+
+    #contacto{
+        display:grid;
+        grid-template: "titulo-contacto" 9em
+        "contenedor-formulario";
+        height: fit-content;
+
+    }
+
+    .contenedor-formulario{
+        display:grid;
+        grid-template:"form-contenedor imagen-invitacion2" 1fr;
+        gap:1.4rem;
+        padding: 0 2rem;
+        place-items: center;
+
+    }
+
+    .titulo-contacto{
+        margin-top: .85em;
+        text-align: center;
+        font-size: 2.25em;
+        font-weight: bold;
+    }
+
+    .form-contenedor{
+        border-radius: 1.563rem;
+        box-shadow: 3px 2px 20px #929292;
+        width: fit-content;
+        height: auto;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1.25rem;
+    }
+    .input#nombre,
+    .input#apellido{
+        width: calc(8em * 2);
+    }
+
+    .input#mail,
+    .textarea{
+        width: calc(17.5em * 2) ;
+    }
+    
+}
+
+
+@media screen and (min-width:768px) and (max-width:1020px) {
+    #perfiles-card{
+        display: none;
+    }
+
+    #invitacion{
+        height: 20rem;
+    }
+
+    .texto-invitacion{
+        font-size: 1.5em;
+    }
+    
+    .contenedor-formulario{
+        margin: 3em 0;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: .45rem;
+    }
+    
+    .contenedor-campo{
+        display: flex;
+        flex-direction: column;
+    }
+    .campo{
+        padding: .3em;
+    }
+
+    .input{
+        border: 1px solid #929292;
+        border-radius: 5px;
+        height: .875rem;
+        padding: 7px;
+    }
+    
+    .input#nombre,
+    .input#apellido,    
+    .input#mail{
+        width: 24em;
+    }
+    
+    .textarea{
+        border: 1px solid #929292;
+        border-radius: 5px;
+        width: 24em;
+        height: 5rem;
+        resize: none;
+        padding: 7px;
+    }
+
+    .control-boton{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .btn-submit{
+        margin: 0px 1rem .3rem 1rem ;
+        line-height: 1rem;
+        font-size: .7rem;
+    }   
+
+    
+}
+
+@media screen and (max-width:760px) {
+    #invitacion,
+    #perfiles-card,
+    .imagen-invitacion2{
+        display: none;
+    }
+    #contacto{
+        grid-template: "titulo-contacto","contenedor-formulario";
+        place-items: center;
+
+    }
+    .titulo-contacto{
+        font-size: 1.5rem;
+    }
+    
+    .contenedor-formulario{
+        grid-template: "form-contenedor";
+        margin: 2em 0;
+    }
+        
+    .contenedor-campo{
+        display: flex;
+        flex-direction: column;
+    }
+    .campo{
+        padding: .3em;
+    }
+
+    .input{
+        border: 1px solid #929292;
+        border-radius: 5px;
+        height: .875rem;
+        padding: 7px;
+    }
+    
+    .input#nombre,
+    .input#apellido,    
+    .input#mail{
+        width: 14em;
+    }
+    
+    .textarea{
+        border: 1px solid #929292;
+        border-radius: 5px;
+        width: 14em;
+        height: 5rem;
+        resize: none;
+        padding: 7px;
+    }
+
+    .control-boton{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .btn-submit{
+        margin: 0px 1rem .3rem 1rem ;
+        line-height: 1rem;
+        font-size: .7rem;
+    }   
+}

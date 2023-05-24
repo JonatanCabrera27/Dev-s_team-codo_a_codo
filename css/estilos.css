@@ -63,6 +63,9 @@
 .video1 {
 
   grid-area: video1;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .video1 iframe{
   width:400px;
@@ -72,6 +75,9 @@
 .video2 {
 
   grid-area: video2;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .video2 iframe{
   width:400px;
@@ -80,6 +86,9 @@
 
 .video3 {
   grid-area: video3;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .video3 iframe{
   width:400px;
@@ -176,15 +185,14 @@
   /*Para celulares*/
 
   .gridcontenedor {
-    grid-template-areas: 'nav'
+    grid-template-areas: 
       'carrusel'
       'info1'
       'video1'
       'video2'
       'video3'
       'info2'
-      'aside'
-      'footer';
+      'aside';
   }
 
   .slider-container,
@@ -220,16 +228,14 @@
   /*Para tablets*/
   .gridcontenedor {
 
-    grid-template-areas: 'nav'
+    grid-template-areas: 
       'carrusel'
-      'aside'
       'video1'
       'info1'
       'video2'
       'info2'
       'video3'
-      'footer'
-    ;
+      'aside';
 
   }
 
@@ -245,13 +251,11 @@
 
   /* desktop*/
   .gridcontenedor {
-    grid-template-areas: 'nav nav nav nav'
+    grid-template-areas: 
       'carrusel carrusel carrusel carrusel '
       'info1 info1 info1 aside '
       'video1 video2 video3 aside '
-      'info2 info2 info2 aside '
-      'footer footer footer footer '
-    ;
+      'info2 info2 info2 aside ' ;
   }
 
   .slider-container,

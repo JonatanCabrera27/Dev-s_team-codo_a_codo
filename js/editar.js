@@ -1,10 +1,11 @@
-//consumir una api con Vue
+id=location.search.substr(4)
+
 const { createApp } = Vue
 createApp({
     data() {
       return {
-      noticias:[],
-      url:"http://valeriaaragon.pythonanywhere.com/noticias",
+     
+      url:'http://valeriaaragon.pythonanywhere.com/noticias/'+id,
       error:false,
 
        /*atributos para el guardar los valores del formulario */
@@ -26,29 +27,23 @@ createApp({
             .then(response => response.json())
             .then(data => {
               console.log(data)
-              this.noticias=data                                                            
-              console.log(this.noticias)
+              this.id=data.id
+              this.titulo=data.titulo
+              this.descripcion=data.descripcion
+              this.contenido=data.contenido
+              this.imagen=data.imagen
+                                                         
+              //console.log(this.noticias)
            })
             .catch(error=>{
                alert("Ups... se produjo un error: "+ error);
                this.error=true
              })
         
-        },      
-//eliminar y grabar
-    eliminar(id) {
-        const url = this.url+'/' + id;
-        var options = {
-            method: 'DELETE',
-        }
-        fetch(url, options)
-            .then(res => res.text()) // or res.json()
-            .then(res => {
-   alert('Registro Eliminado')
-                location.reload(); // recarga el json luego de eliminado el registro
-            })
-    },
-    grabar(){
+        },
+      
+
+      grabar(){
         let noticia = {
             titulo:this.titulo,
             descripcion: this.descripcion,
@@ -57,7 +52,7 @@ createApp({
         }
         var options = {
             body:JSON.stringify(noticia),
-            method: 'POST',
+            method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             redirect: 'follow'
         }
@@ -73,11 +68,10 @@ createApp({
               })   
             }   
   },
-    
+
 //en created pongo qué funcion se tiene que ejecutar cuando arranque vue
   created() {
       this.fetchData(this.url)
   },
 }).mount('#app')
-
 

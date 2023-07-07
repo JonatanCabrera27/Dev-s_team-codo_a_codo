@@ -1,10 +1,10 @@
 cad=`
-<nav class="navbar">
-<div class="navbar-logo">
+<nav class="nbar">
+<div class="nbar-logo">
     <div class="logo">
         <a href="index.html"><img src="./img/icono.png" alt="index.html"></a>
     </div>
-    <div class="navbar-burger">
+    <div class="nbar-burger">
         <button id="bBurger">
             <span class="material-symbols-outlined">
                 menu
@@ -12,7 +12,7 @@ cad=`
         </button>
     </div>
 </div>
-<div id="links" class="navbar-inicio">
+<div id="links" class="nbar-inicio">
     <a href="./index.html">Inicio</a>
     <a href="./normativas.html">Normativas</a>
     <a href="./vulnerabilidades.html">Vulnerabilidades</a>

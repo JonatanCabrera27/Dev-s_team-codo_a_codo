@@ -118,7 +118,7 @@
 }
 
 /* Navbar  */
-.navbar {
+.nbar {
   display: flex;
   background-color: rgb(33, 37, 41);
   padding: 20px;
@@ -128,29 +128,29 @@
   width: 2.813em;
 }
 
-.navbar-burger {
+.nbar-burger {
   display: none;
 }
 
-.navbar-burger button {
+.nbar-burger button {
   border: none;
   background-color: rgb(33, 37, 41);
   color: #ffffff;
   cursor: pointer;
 }
 
-.navbar-inicio {
+.nbar-inicio {
   display: flex;
   align-items: center;
 }
 
-.navbar-inicio a {
+.nbar-inicio a {
   color: white;
   padding: 10px;
   text-decoration: none;
 }
 
-.navbar-inicio a:hover {
+.nbar-inicio a:hover {
   background-color: white;
   color: black;
 }

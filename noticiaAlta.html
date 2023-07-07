@@ -32,21 +32,32 @@
 
 <main>
     <div class="container" id="app">
+     <div class="row ">
         <h1>Complete los datos de la Noticia Nueva</h1>
-       
-    <form action="" style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-     
-        <input v-model="titulo" type="text" name="titulo" id="titulo" placeholder="Ingrese Titulo"><br>
-        <input v-model="descripcion" type="text" name="descripcion" id="descripcion" placeholder="Ingrese Descripcion"><br>
-        <input v-model="contenido" type="text" name="contenido" id="contenido" placeholder="Ingrese Contenido"><br>
-        <input v-model="imagen" type="text" name="imagen" id="imagen" placeholder="Ingrese Imagen"><br>
-
-        <button type="button" class="btn btn-outline-primary" v-on:click="grabar()">Grabar</button>
- 
-    </form>
-</div>
+        <form action="" class="p-4 row g-3 col-md-6 col-sm-10  rounded-4" style="background-color: aliceblue;margin:10px auto ; " >
+          <div class="col-6 ">
+            <label for="titulo" class="form-label fw-bold">Titulo</label>
+            <input v-model="titulo" class="form-control" type="text" name="titulo" id="titulo" placeholder="Ingrese Titulo">
+          </div>
+          <div class="col-6">
+            <label for="descripcion" class="form-label fw-bold">Descripcion</label>
+            <input v-model="descripcion" class="form-control" type="text" name="descripcion" id="descripcion" placeholder="Ingrese la descripcion">
+          </div>
+          <div class="col-12 ">
+            <label for="contenido" class="form-label fw-bold">Contenido</label>
+            <textarea v-model="contenido" style="resize: none; height: 150px;" class="form-control " name="contenido" id="contenido" placeholder="Ingrese el contenido"></textarea>
+          </div>
+          <div class="col-12">
+            <label for="imagen" class="form-label fw-bold">Imagen</label>
+            <input v-model="imagen" :class="['form-control',imagen ? 'mb-3':'']" type="text" name="imagen" id="imagen" placeholder="Ingrese la URL de su imagen">
+            <img :class="[imagen ? 'img-fluid mx-auto rounded d-block':'hidden']" style="height: 15em;" :src="imagen" alt="">
+          </div>
+          <button type="button" class="btn btn-outline-primary" v-on:click="grabar()">Agregar noticia</button>
+        </form>
+      </div>
+     </div>   
+    </div>
 </main>
-
   <footer id="idfooter">
            
   </footer>

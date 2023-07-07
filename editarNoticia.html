@@ -36,33 +36,34 @@
   <main>
  
     <div class="container" id="app">
-      <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-      <h2>Editar Imagen </h2>
-      
-      <div class="mb-3">
-        <label for="id">Id</label>
-        <input type="number" name="id" id="id" disabled v-model="id" >
+      <div class="row ">
+        <h1 class="text-center my-5 text-uppercase">Editar noticia</h1>
+        <form action="" class="p-4 row g-3 col-md-6 col-sm-10  rounded-4" style="background-color: aliceblue;margin:10px auto ; " >
+          <div class="col-12 ">
+            <label for="id" class="form-label fw-bold">ID de publicacion</label>
+            <input class="form-control" type="number" name="id" id="id" disabled v-model="id" >
+          </div>
+          <div class="col-6 ">
+            <label for="titulo" class="form-label fw-bold">Titulo</label>
+            <input v-model="titulo" class="form-control" type="text" name="titulo" id="titulo" placeholder="Ingrese Titulo">
+          </div>
+          <div class="col-6">
+            <label for="descripcion" class="form-label fw-bold">Descripcion</label>
+            <input v-model="descripcion" class="form-control" type="text" name="descripcion" id="descripcion" placeholder="Ingrese la descripcion">
+          </div>
+          <div class="col-12 ">
+            <label for="contenido" class="form-label fw-bold">Contenido</label>
+            <textarea v-model="contenido" style="resize: none; height: 150px;" class="form-control " name="contenido" id="contenido" placeholder="Ingrese el contenido"></textarea>
+          </div>
+          <div class="col-12">
+            <label for="imagen" class="form-label fw-bold">Imagen</label>
+            <input v-model="imagen" class="form-control mb-3" type="url" name="imagen" id="imagen" placeholder="Ingrese la URL de su imagen">
+            <img class="img-fluid rounded" :src="imagen" alt="">
+          </div>
+          <button type="button" class="btn btn-outline-primary" v-on:click="grabar()">Guardar cambios</button>
+        </form>
       </div>
-      <div class="mb-3">
-        <label for="descripcion">Descripción</label>
-        <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
-      </div>
-      <div class="mb-3">
-        <label for="contenido">Contenido</label>
-        <input type="text" name="contenido" id="contenido" v-model="contenido">
-      </div>
-      
-      <div class="mb-3">
-        <label for="imagen">Imagen</label>
-        <input type="text" name="imagen" id="imagen" v-model="imagen">  
-        <img width="100"   :src="imagen" alt="">
-      </div>
-
-      <button type="button" class="btn btn-outline-primary" v-on:click="grabar()">Grabar</button>
-
-      </form>
     </div>
-
  
  
  

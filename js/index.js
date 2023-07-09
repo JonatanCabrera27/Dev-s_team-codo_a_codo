@@ -18,7 +18,7 @@ cad=`
     <a href="./vulnerabilidades.html">Vulnerabilidades</a>
     <a href="./noticias.html">Noticias</a>
     <a href="./contacto.html">Contacto</a>
-    <a href="./noticiasAdministrador.html">Administrador</a>
+    <a href="./login.html">Login</a>
 </div>
 </nav>
 `

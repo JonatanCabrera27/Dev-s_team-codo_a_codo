@@ -693,7 +693,8 @@ h4 {
     object-fit: contain;
   }
 
-  .nbar {
+  .nbar,
+  .nbar-burger {
     display: block;
   }
 
@@ -703,16 +704,18 @@ h4 {
 
   }
 
-  .nbar-burger {
-    display: block;
-  }
-
   .nbar-inicio {
     display: none;
     flex-direction: column;
-
   }
 
+  .noticiasApi{
+    margin: 1em;
+  }
+  
+  #imanoti {
+    width: 17rem;
+  }
 }
 
 @media only screen and (max-width: 920px){

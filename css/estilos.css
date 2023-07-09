@@ -693,21 +693,21 @@ h4 {
     object-fit: contain;
   }
 
-  .navbar {
+  .nbar {
     display: block;
   }
 
-  .navbar-logo {
+  .nbar-logo {
     display: flex;
     align-items: center;
 
   }
 
-  .navbar-burger {
+  .nbar-burger {
     display: block;
   }
 
-  .navbar-inicio {
+  .nbar-inicio {
     display: none;
     flex-direction: column;
 

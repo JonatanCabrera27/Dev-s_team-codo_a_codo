@@ -5,7 +5,7 @@ createApp({
     data() {
       return {
      
-      url:'http://valeriaaragon.pythonanywhere.com/noticias/'+id,
+      url:'https://valeriaaragon.pythonanywhere.com/noticias/'+id,
       error:false,
 
        /*atributos para el guardar los valores del formulario */

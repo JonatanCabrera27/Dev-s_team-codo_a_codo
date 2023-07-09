@@ -2,7 +2,7 @@ const { createApp } = Vue  //creo un objeto VUE llamdo createApp
  createApp({
    data() {  // define los datos de VUE
      return {
-       url: 'http://valeriaaragon788.pythonanywhere.com/usuarios',
+       url: 'https://valeriaaragon788.pythonanywhere.com/usuarios',
        datos: [],
        usuario:"",   //admin
        clave:""  //123

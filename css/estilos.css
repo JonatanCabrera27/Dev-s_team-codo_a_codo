@@ -714,11 +714,11 @@ h4 {
   }
   
   #imanoti {
-    width: 17rem;
+    width: 13rem;
   }
 }
 
-@media only screen and (max-width: 920px){
+@media (min-width:600px) and (max-width: 920px){
 
   /*Para tablets*/
   .gridcontenedor {
